@@ -24,6 +24,10 @@ export default defineConfig(({ mode }) => {
       port: 5000,
       // 允許所有主機存取（Replit 必要配置）
       strictPort: true,
+      // 允許的主機清單
+      allowedHosts: [
+        'b703d20c-22fd-4f10-baf8-5a6de8b2a57f-00-2xzm3vhvho36d.picard.replit.dev'
+      ],
     },
     
     // 多頁面應用配置
