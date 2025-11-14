@@ -6,8 +6,8 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig(({ mode }) => {
-  // 根據不同模式設定 CONTEXT_PATH
-  const contextPath = mode === 'production' ? '/foo/bar' : '/';
+  // 根據不同模式設定 CONTEXT_PATH（必須以斜線結尾以確保路徑拼接正確）
+  const contextPath = mode === 'production' ? '/foo/bar/' : '/';
   
   return {
     // 設定基礎路徑
