@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歡迎頁面</title>
+  <link rel="stylesheet" href="/src/styles/main.scss">
+</head>
+<body>
+  <div class="container">
+    <div class="welcome-content">
+      <h1>歡迎回來！</h1>
+      
+      <div class="user-info">
+        <p><strong>使用者：</strong><span id="username"></span></p>
+        <p><strong>登入時間：</strong><span id="loginTime"></span></p>
+      </div>
+      
+      <p>您已成功登入系統。</p>
+      
+      <button id="logoutBtn" class="btn btn-danger">登出</button>
+      
+      <div class="nav-links">
+        <a href="#" id="aboutLink">關於我們</a>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/scripts/welcome.js"></script>
+</body>
+</html>
